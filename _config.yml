@@ -1,0 +1,8 @@
+# GitHub Pages config for the StickSquad site (docs/ folder).
+#
+# Without this — and without the front matter at the top of each page — Jekyll
+# treats the .md files as static assets and serves the raw Markdown, which is
+# not something to put in front of a Google reviewer.
+title: StickSquad
+description: A crew of stickmen who live on your desktop.
+theme: jekyll-theme-minimal
