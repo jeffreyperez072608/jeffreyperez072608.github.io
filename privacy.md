@@ -135,8 +135,10 @@ including the Limited Use requirements. Specifically:
   something.
 - Nobody reads it. We could not — it never reaches us.
 
-By default StickSquad asks Google only for permission to write and send email,
-to read and add calendar events, to open files you pick, and to keep your
+By default StickSquad asks Google only for permission to send email (each one
+only after you approve it; an email you would rather send yourself opens in
+Gmail's own window instead, which needs no permission at all), to read and add
+calendar events, to open files you pick, and to keep your
 to-do list in step with Google Tasks (the sync itself is off until you switch it
 on). Reading your email and searching your Drive requires a separate switch in
 Accounts, which is off unless you turn it on.
