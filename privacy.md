@@ -5,7 +5,7 @@ title: Privacy Policy
 
 # StickSquad — Privacy Policy
 
-**Last updated: 23 September 2026**
+**Last updated: 28 September 2026**
 
 StickSquad is a desktop companion for Windows, published by **Jeff Perez**.
 This policy explains what it stores, where it stores it, and who else can see
@@ -25,7 +25,9 @@ your files, your email or how you use the app, because none of it is ever sent
 to us.
 
 There is no analytics, no telemetry, no crash reporting that reaches us, and no
-advertising of any kind.
+advertising of any kind. If the app crashes, the report stays on your computer;
+"Copy diagnostics" in Settings → About shows you the full text, with personal
+details removed, before you choose to send it to anyone.
 
 ## 2. What is stored on your computer
 
@@ -36,12 +38,22 @@ All of it lives in your own Windows user profile, under
 |---|---|---|
 | Conversations and things the stickmen remember about you | `sticksquad.db` | You can view and delete individual memories in Settings → Memories |
 | Your crew: names, personalities, jobs, outfits | `crew.json` | |
-| Reminders | `sticksquad.db` | |
-| Meal entries, if you use the health tracker | `sticksquad.db` | |
+| Reminders, your to-do list, settings and sticker book | `sticksquad.db` | |
+| Meal entries, if you use the health tracker | `sticksquad.db` | Calorie estimates are off unless you turn them on |
 | Activity journal, if you switch it on | `sticksquad.db` | See section 4 |
 | Recorded routines | `routines.json` | Which apps you opened and what you searched for |
-| Account tokens, if you connect Google | `accounts.json` | Encrypted — see section 5 |
+| Account tokens, if you connect Google or Microsoft | `accounts.json` | Encrypted — see section 5 |
 | Your Google Gemini API key, if you provide one | `brain-key.json` | Encrypted — see section 6 |
+| An error log and crash reports | `logs\`, `Crashpad\` | Never sent anywhere — see section 1 |
+| Mods you add | `mods\` | Plain files you put there yourself |
+| Voice files and the AI engine, if you download them | `%LOCALAPPDATA%\StickSquad` | Only when you press download |
+
+Two things are saved **outside** that folder, and only when you ask: a clip you
+record goes to your **Videos\StickSquad** folder, and a research note you save
+goes to **Documents\StickSquad\Research**. A postcard (a stickman you send to a
+friend) is a small file saved wherever you choose; it holds that stickman's
+name, personality, colour, outfit and any message you type — never your
+conversations or memories.
 
 Uninstalling StickSquad does **not** delete this folder, so that reinstalling
 keeps your crew. To remove it, delete the folders above, or use the delete
@@ -50,10 +62,23 @@ controls inside the app before uninstalling.
 ## 3. The AI runs on your computer
 
 StickSquad ships with a small language model and runs it locally. Your messages
-are answered on your own machine and are not sent anywhere.
+are answered on your own machine and are not sent anywhere. The voices and the
+speech recognition run locally too.
 
-Two optional exceptions are described in sections 6 and 7. Both are off unless
-you turn them on, and the app shows which one is in use at all times.
+**The microphone** is on only while you are talking to a stickman, and the
+screen shows it the whole time. Nothing is recorded in the background, and what
+you say is turned into text on your computer and not kept as audio.
+
+**The clipboard** is read only at the moment you press the "read aloud" key,
+and is not read out at all if it looks like a password or key. It is never
+watched, stored or sent anywhere.
+
+**The screen** is recorded only when you start a clip yourself, for the few
+seconds you choose, and a stickman says so while it happens. The clip is saved
+on your computer and not uploaded.
+
+The one optional exception to "the AI runs locally" is described in section 6.
+It is off unless you turn it on, and the app shows when it is in use.
 
 ## 4. The activity journal (off by default)
 
@@ -78,25 +103,30 @@ tell you what you did today.
 
 This journal never leaves your computer.
 
-## 5. Connecting Google (optional)
+## 5. Connecting Google or Microsoft (optional)
 
-If you connect a Google account, StickSquad uses Google's standard OAuth
-sign-in: your browser opens Google's own page, and the app never sees your
-password.
+If you connect a Google or Microsoft account, StickSquad uses that company's
+standard OAuth sign-in: your browser opens Google's or Microsoft's own page, and
+the app never sees your password. The app then talks **directly** to Google's
+APIs or to Microsoft Graph from your computer — never through a server of ours.
 
 **Access tokens are encrypted** with Windows DPAPI (via Electron's
 `safeStorage`) and stored in your user profile. They are never written in plain
 text, never shown to the app's own windows, and never sent to us.
 
 **What StickSquad does with Google user data — Limited Use.** StickSquad's use
-of information received from Google APIs follows Google's
-[Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy).
-Specifically:
+and transfer to any other app of information received from Google APIs will
+adhere to the
+[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
+including the Limited Use requirements. Specifically:
 
-- Your Gmail, Calendar and Drive data is used **only** to carry out the task
-  you asked a stickman to do, on your computer, at the time you asked.
+- Your Gmail, Calendar, Drive and Tasks data is used **only** to carry out the
+  task you asked a stickman to do, or a job you set up for it (for example, a
+  heads-up before a meeting), on your computer.
 - It is read by the **local** language model. It is not sent to us, and it is
-  not sent to any third party.
+  not sent to any third party. (The one exception is if **you** choose Google
+  Gemini as the brain in section 6: the words a stickman works with then go to
+  Google's Gemini service under your own API key.)
 - It is **not** used for advertising, and it is **not** used to train any AI
   model.
 - It is **not** sold or transferred to anyone.
@@ -105,17 +135,27 @@ Specifically:
   something.
 - Nobody reads it. We could not — it never reaches us.
 
-By default StickSquad asks only for permission to write and send email, to read
-and add calendar events, and to open files you pick. Reading your email and
-searching your Drive requires a separate switch in Accounts, which is off
-unless you turn it on.
+By default StickSquad asks Google only for permission to write and send email,
+to read and add calendar events, to open files you pick, and to keep your
+to-do list in step with Google Tasks (the sync itself is off until you switch it
+on). Reading your email and searching your Drive requires a separate switch in
+Accounts, which is off unless you turn it on.
+
+From Microsoft it asks to read and write your Outlook mail and calendar, to send
+mail, and for your basic profile (so the account can be shown by its address).
+The same rules apply to that data as to Google's: used only for what you asked,
+processed on your computer, never sent to us, sold, used for advertising or
+used to train AI.
 
 Anything a stickman wants to **send, create or change** shows you an approval
 card first. Nothing is sent without you agreeing to that specific action.
 
 You can disconnect an account at any time in Accounts, which deletes its stored
 tokens. You can also revoke access at
-[myaccount.google.com/permissions](https://myaccount.google.com/permissions).
+[myaccount.google.com/permissions](https://myaccount.google.com/permissions)
+for Google, or [account.live.com/consent/Manage](https://account.live.com/consent/Manage)
+(personal) or [myapps.microsoft.com](https://myapps.microsoft.com) (work or
+school) for Microsoft.
 
 ## 6. Google Gemini as the brain (optional, off by default)
 
@@ -143,13 +183,21 @@ to Twitch beyond the connection itself, and nothing is sent to us.
 
 ## 8. Other network connections
 
-Besides sections 6 and 7, StickSquad connects out only when you set one of
+Besides sections 5, 6 and 7, StickSquad connects out only when you set one of
 these up yourself:
 
 - a calendar address you paste in, to read that calendar;
+- the researcher job, which searches Wikipedia, OpenAlex and arXiv for the topic
+  you ask about — nothing about you is in the search;
 - the travel-deals job, which fetches public deal feeds;
-- downloading an optional larger AI model or the optional voice files, when you
-  press the download button.
+- checking for updates, if you said yes to it: once a day the app asks whether a
+  newer version exists, and the request carries nothing but the app's version.
+  It never downloads or installs anything by itself. (Copies from a store are
+  updated by that store instead, and do not check.)
+- downloading an optional larger AI model, the voice files or the AI engine,
+  when you press the download button (from GitHub or Hugging Face).
+
+The app's **Privacy** screen lists which of these are on at any moment.
 
 With none of these configured, StickSquad makes **no network connections at
 all**. This is verified by an automated test that fails the build if anything
