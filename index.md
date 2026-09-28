@@ -22,20 +22,36 @@ sign up for and nothing to pay monthly.
 - **Talk and remember.** Each stickman has its own personality, its own voice,
   and its own memory of your conversations. You can read and delete everything
   it remembers.
-- **Voice.** Talk to them out loud and they answer aloud, with their mouths
-  moving. Works out of the box; better voices are an optional download.
+- **Voice.** Talk to them out loud and they answer aloud, each in its own voice,
+  with their mouths moving. The voices run on your computer.
+- **Play with them.** Click to chat, right-click to poke, wiggle to tickle,
+  stroke to pet, pick one up and throw it. Drop a file on one and it reads it.
 - **Remind you.** "Remind me to drink water every 2 hours", "every weekday at
-  9". They say it out loud when it is time.
+  9", or a quick "5 minute timer". They say it out loud when it is time.
+- **Focus with you.** Start a focus session and the whole crew sits down and
+  works beside you, with gentle, guilt-free break nudges.
+- **Keep your list on the screen.** Add a to-do and a stickman walks over and
+  sticks it up as a note; tick it off and one crosses it out. Keeps in step with
+  Google Tasks if you like.
 - **Keep you company while you work**, and stay out of the way — they go quiet
   during Do Not Disturb and step aside for anything fullscreen.
-- **Play.** Fights, tag, hide and seek, dance-offs with a disco ball. How much
-  mischief they get up to is a setting, from "off" to "chaotic".
+- **Play.** Fights, tag, hide and seek, penalty shootouts, conga lines and
+  dance-offs with a disco ball. How much mischief they get up to is a setting,
+  from "off" to "chaotic".
+- **Share them.** Record a few seconds of what they are up to as a video, or
+  send one of your stickmen to a friend's desktop for a day as a postcard.
+- **Make your own.** Personalities, dances and outfits are simple files in a
+  mods folder.
 - **React to your Twitch chat** (optional). Viewers' messages appear over your
   stickmen, subs and raids get a celebration, and your chat can set them off
   with `!dance`. No Twitch login needed.
-- **Do real work** (optional). Connect Google and they can draft and send
-  email, read and add calendar events, and work with files you pick. Anything
+- **Do real work** (optional). Connect Google or Microsoft (Outlook) and they
+  can draft and send email, read and add calendar events, give you a heads-up
+  before a meeting with a Join button, and work with files you pick. Anything
   that sends or changes something asks you first.
+- **Small chores.** "Tidy my downloads" sorts files into folders (shown to you
+  first, and undone in one sentence). A researcher for students finds and cites
+  sources — and never writes the essay. A language buddy teaches a word a day.
 
 ## Private by default
 
@@ -68,4 +84,4 @@ Something broken, or an idea? **sticksquad.app@gmail.com**
 [Privacy Policy](privacy.html) · [Terms of Service](terms.html)
 
 Published by Jeff Perez. StickSquad includes open-source components; their
-licences ship with the app and are listed under Settings → Brain.
+licences ship with the app and are listed under Settings → About.
