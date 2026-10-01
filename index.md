@@ -8,7 +8,9 @@ title: StickSquad
 **A crew of stickmen who live on your desktop, get into trouble, and quietly
 keep you on track.**
 
-Out on 6 October 2026 — [get it on itch.io](https://sticksquad.itch.io/sticksquad).
+Out on 6 October 2026 — get it from the
+[Microsoft Store](https://apps.microsoft.com/detail/9P4MGR9NG1WP) or
+[itch.io](https://sticksquad.itch.io/sticksquad).
 
 Up to five stickmen walk along your taskbar, climb the edges of your screen,
 hang from the top, sit on your window title bars and use your desktop icons as
@@ -79,9 +81,12 @@ Read the full [Privacy Policy](privacy.html).
 **Launches Tuesday, 6 October 2026, at 9:00 AM Philippine time** (01:00 UTC).
 US$5.99, once — no subscription, no in-app purchases.
 
-- **[StickSquad on itch.io](https://sticksquad.itch.io/sticksquad)** — the page is
-  up now, and buying opens at launch.
-- **Microsoft Store** — the link goes here on launch day.
+- **[StickSquad in the Microsoft Store](https://apps.microsoft.com/detail/9P4MGR9NG1WP)**
+  — installs and updates through the Store.
+- **[StickSquad on itch.io](https://sticksquad.itch.io/sticksquad)** — a
+  standard Windows installer.
+
+Both pages are up now, and buying opens at launch.
 
 ## Support
 
