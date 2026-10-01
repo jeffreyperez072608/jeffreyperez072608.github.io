@@ -8,6 +8,8 @@ title: StickSquad
 **A crew of stickmen who live on your desktop, get into trouble, and quietly
 keep you on track.**
 
+Out on 6 October 2026 — [get it on itch.io](https://sticksquad.itch.io/sticksquad).
+
 Up to five stickmen walk along your taskbar, climb the edges of your screen,
 hang from the top, sit on your window title bars and use your desktop icons as
 furniture. They play tag, have high-five contests, throw each other about, draw
@@ -66,14 +68,20 @@ Read the full [Privacy Policy](privacy.html).
 
 ## Requirements
 
-- Windows 10 or 11, 64-bit
+- Windows 10 or 11, 64-bit, not in S mode (switching out of S mode is free)
 - About 8 GB of RAM (it will tell you if yours is tight, and offers a smaller
   model)
+- About 3 GB of disk space
 - A GPU helps but is not needed
 
 ## Get it
 
-*(Add your store link here.)*
+**Launches Tuesday, 6 October 2026, at 9:00 AM Philippine time** (01:00 UTC).
+US$5.99, once — no subscription, no in-app purchases.
+
+- **[StickSquad on itch.io](https://sticksquad.itch.io/sticksquad)** — the page is
+  up now, and buying opens at launch.
+- **Microsoft Store** — the link goes here on launch day.
 
 ## Support
 
