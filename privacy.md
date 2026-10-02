@@ -5,7 +5,7 @@ title: Privacy Policy
 
 # StickSquad — Privacy Policy
 
-**Last updated: 28 September 2026**
+**Last updated: 3 October 2026**
 
 StickSquad is a desktop companion for Windows, published by **Jeff Perez**.
 This policy explains what it stores, where it stores it, and who else can see
@@ -22,7 +22,8 @@ connections at all.
 There is no StickSquad account, no sign-up and no cloud. We do not operate a
 server that your copy of the app talks to. We cannot see your conversations,
 your files, your email or how you use the app, because none of it is ever sent
-to us.
+to us — unless you choose to email us yourself, for example to report an AI
+reply (section 3).
 
 There is no analytics, no telemetry, no crash reporting that reaches us, and no
 advertising of any kind. If the app crashes, the report stays on your computer;
@@ -76,6 +77,15 @@ watched, stored or sent anywhere.
 **The screen** is recorded only when you start a clip yourself, for the few
 seconds you choose, and a stickman says so while it happens. The clip is saved
 on your computer and not uploaded.
+
+**Reporting an AI reply.** The stickmen's replies are written by an AI and can
+be wrong or inappropriate, so every reply in the chat has a "Report" link. A
+report is an email that opens in your own email app, addressed to
+sticksquad.app@gmail.com. It contains the reply, the reason you picked, any note
+you add, the app's version and which AI wrote the reply — and what you said just
+before it only if you tick that box. Nothing is sent unless you press Send
+yourself. Reports are used only to look into the reply and make the AI's
+answers better.
 
 The one optional exception to "the AI runs locally" is described in section 6.
 It is off unless you turn it on, and the app shows when it is in use.
