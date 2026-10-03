@@ -56,9 +56,18 @@ friend) is a small file saved wherever you choose; it holds that stickman's
 name, personality, colour, outfit and any message you type — never your
 conversations or memories.
 
-Uninstalling StickSquad does **not** delete this folder, so that reinstalling
-keeps your crew. To remove it, delete the folders above, or use the delete
-controls inside the app before uninstalling.
+**If you installed StickSquad from the Microsoft Store**, Windows may keep
+these files in the app's own storage instead, under
+`%LOCALAPPDATA%\Packages\StickSquad.StickSquad_pb1jb2szh4g52`. That happens
+when the folders above did not already exist. The app works exactly the
+same either way.
+
+Uninstalling the version from our website or itch.io does **not** delete
+these folders, so that reinstalling keeps your crew. To remove them, delete
+the folders above, or use the delete controls inside the app before
+uninstalling. Uninstalling the **Microsoft Store** version deletes whatever
+Windows kept in the app's own storage. Folders that already existed before
+you installed it are left alone.
 
 ## 3. The AI runs on your computer
 
@@ -231,7 +240,9 @@ Because everything is on your computer, you do not need to ask us for it:
   everything. Disconnecting an account deletes its tokens.
 - **Take it** — the files listed in section 2 are yours; copy the folder.
 - **Erase it completely** — delete `%APPDATA%\StickSquad` and
-  `%LOCALAPPDATA%\StickSquad` after uninstalling.
+  `%LOCALAPPDATA%\StickSquad` after uninstalling. Uninstalling the Microsoft
+  Store version also deletes the copy Windows kept in the app's own storage
+  (see section 2).
 
 ## 11. Changes to this policy
 
