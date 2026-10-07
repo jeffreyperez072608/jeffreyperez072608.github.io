@@ -6,3 +6,27 @@
 title: StickSquad
 description: A crew of stickmen who live on your desktop.
 theme: jekyll-theme-minimal
+
+# A sitemap.xml, and a robots.txt that points to it, so Google finds the
+# privacy policy and terms and not only the home page: in October 2026 Search
+# Console had indexed the home page and never heard of privacy.html.
+# jekyll-sitemap is one of the plugins GitHub Pages runs. Google's
+# verification file (only in the live repository) stays out of the sitemap.
+plugins:
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: "googlea0bf202f6c0f4d67.html"
+    values:
+      sitemap: false
+
+# Only index, privacy and terms are the website. Everything else in this folder
+# is working notes for the publisher, and Jekyll would otherwise serve each one
+# at its own URL (raw, since they carry no front matter).
+exclude:
+  - README-publishing.md
+  - launch-checklist.md
+  - store-listing.md
+  - store-guide.md
+  - marketing-plan.md
+  - launch-posts.md
